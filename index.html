@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback on the Digital Coffee Table Book of Chhatrapati Sambhajinagar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+            padding: 20px 0;
+            color: #202124;
+            margin: 0;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 770px;
+            margin: 0 auto;
+            padding: 12px;
+        }
+        
+        @media (max-width: 800px) {
+            .container {
+                max-width: 100%;
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 8px;
+            }
+            
+            body {
+                padding: 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 4px;
+            }
+        }
+        
+        /* Small mobile devices */
+        @media (max-width: 360px) {
+            .container {
+                padding: 2px;
+            }
+        }
+        
+        .banner {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            display: block;
+            object-fit: cover;
+            object-position: center 35%;
+        }
+        
+        .banner-wrapper {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            border-radius: 12px;
+            background: linear-gradient(90deg, #0a0e27 0%, #1a237e 30%, #0d47a1 70%, #01579b 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .banner-wrapper {
+                height: 150px;
+                margin-bottom: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .banner-wrapper {
+                height: 130px;
+                border-radius: 4px;
+                margin-bottom: 8px;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .banner-wrapper {
+                height: 110px;
+                margin-bottom: 4px;
+            }
+        }
+        
+        .banner-text {
+            color: white;
+            text-align: center;
+            z-index: 2;
+            padding: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .banner-text h2 {
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            letter-spacing: 3px;
+        }
+        
+        .banner-text p {
+            font-size: 28px;
+            font-weight: 600;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            letter-spacing: 2px;
+        }
+        
+        @media (max-width: 768px) {
+            .banner-text h2 {
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+            
+            .banner-text p {
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .banner-text {
+                padding: 10px;
+            }
+            
+            .banner-text h2 {
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                margin-bottom: 4px;
+            }
+            
+            .banner-text p {
+                font-size: 12px;
+                letter-spacing: 0.5px;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .banner-text h2 {
+                font-size: 12px;
+            }
+            
+            .banner-text p {
+                font-size: 11px;
+            }
+        }
+        
+        .header {
+            background: white;
+            padding: 32px 24px 24px 24px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-top: 8px solid #0d47a1;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 24px 16px 16px 16px;
+                border-top: 8px solid #4285f4;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header {
+                padding: 20px 12px 12px 12px;
+                border-radius: 4px;
+                border-top: 6px solid #4285f4;
+            }
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1a1a2e;
+            line-height: 1.3;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 20px;
+            }
+        }
+        
+        .header p {
+            font-size: 14px;
+            color: #5f6368;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        
+        .email-info {
+            font-size: 14px;
+            color: #5f6368;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #dadce0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 480px) {
+            .email-info {
+                font-size: 12px;
+            }
+        }
+        .switch-account {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-left: auto;
+            font-size: 14px;
+            white-space: nowrap;
+        }   
+        @media (max-width: 480px) {
+            .switch-account {
+                font-size: 12px;
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+        
+        .switch-account:hover {
+            text-decoration: underline;
+        }
+        
+        .required-note {
+            color: #5f6368;
+            font-size: 14px;
+            margin-top: 12px;
+        }
+        
+        .required-note::before {
+            content: '* ';
+            color: #d93025;
+        }
+        
+        .question-card {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 4px solid #0d47a1;
+        }
+        
+        .question-card:last-of-type {
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .question-card {
+                padding: 20px 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .question-card {
+                padding: 16px 12px;
+                border-radius: 4px;
+                margin-bottom: 8px;
+            }
+        }
+        
+        .question-title {
+            font-size: 17px;
+            color: #1a1a2e;
+            margin-bottom: 18px;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 480px) {
+            .question-title {
+                font-size: 14px;
+            }
+        }
+        
+        .required {
+            color: #d93025;
+            margin-left: 2px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            background: #fafafa;
+        }
+        
+        @media (max-width: 480px) {
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                font-size: 16px; 
+                padding: 12px 14px;
+            }
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border: 2px solid #0d47a1;
+            background: white;
+            box-shadow: 0 0 0 4px rgba(13, 71, 161, 0.1);
+        }
+        
+        input[type="text"]::placeholder,
+        input[type="email"]::placeholder,
+        textarea::placeholder {
+            color: #80868b;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+            padding: 14px 16px;
+            line-height: 1.6;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            vertical-align: bottom;
+        }
+        
+        textarea:focus {
+            border: 2px solid #0d47a1;
+            background: white;
+            box-shadow: 0 0 0 4px rgba(13, 71, 161, 0.1);
+        }
+        
+        textarea::placeholder {
+            position: relative;
+            top: 0;
+            line-height: 1.5;
+        }
+        
+        .scale-group {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+            gap: 8px;
+        }
+        
+        .scale-label {
+            font-size: 12px;
+            color: #5f6368;
+            text-align: center;
+        }
+        
+        .scale-label.end {
+            text-align: center;
+        }
+        
+        .scale-options {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .scale-options::before {
+            content: attr(data-start-label);
+            font-size: 12px;
+            color: #5f6368;
+            margin-right: 8px;
+        }
+        
+        .scale-options::after {
+            content: attr(data-end-label);
+            font-size: 12px;
+            color: #5f6368;
+            margin-left: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .scale-group {
+                gap: 8px;
+            }
+            
+            .scale-options {
+                gap: 20px;
+                justify-content: space-between;
+            }
+            
+            .scale-options::before,
+            .scale-options::after {
+                font-size: 11px;
+                margin-right: 4px;
+                margin-left: 4px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .scale-options {
+                gap: 15px;
+            }
+            
+            .scale-option label {
+                font-size: 11px;
+            }
+            
+            input[type="radio"] {
+                width: 18px;
+                height: 18px;
+            }
+            
+            .scale-options::before,
+            .scale-options::after {
+                font-size: 10px;
+            }
+        }
+        
+        .scale-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+        
+        .scale-option label {
+            font-size: 12px;
+            color: #5f6368;
+        }
+        
+        input[type="radio"] {
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
+            accent-color: #0d47a1;
+            transition: transform 0.2s ease;
+        }
+        
+        input[type="radio"]:hover {
+            transform: scale(1.1);
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: #0d47a1;
+            transition: transform 0.2s ease;
+        }
+        
+        input[type="checkbox"]:hover {
+            transform: scale(1.1);
+        }
+        
+        .checkbox-option label {
+            font-size: 14px;
+            color: #202124;
+            cursor: pointer;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 480px) {
+            .checkbox-option label {
+                font-size: 13px;
+            }
+        }
+        
+        .other-input {
+            width: 100%;
+            margin-top: 8px;
+            padding: 8px 12px;
+            border: none;
+            border-bottom: 1px solid #dadce0;
+            font-size: 14px;
+        }
+        
+        .other-input:focus {
+            outline: none;
+            border-bottom: 2px solid #4285f4;
+        }
+        
+        .form-actions {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            gap: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            .form-actions {
+                padding: 20px 16px;
+                flex-direction: column-reverse;
+                gap: 12px;
+            }
+            
+            .submit-btn, .clear-btn {
+                width: 100%;
+            }
+            
+            .submit-btn {
+                order: 1;
+            }
+            
+            .clear-btn {
+                order: 2;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .submit-btn, .clear-btn {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+        }
+        
+        .submit-btn {
+            background: linear-gradient(90deg, #0a0e27 0%, #1a237e 30%, #0d47a1 70%, #01579b 100%);
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(13, 71, 161, 0.4);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(13, 71, 161, 0.6);
+            background: linear-gradient(90deg, #0d1136 0%, #1e2a8a 30%, #0e52b5 70%, #016aa8 100%);
+        }
+        
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        
+        .clear-btn {
+            background: transparent;
+            color: #0d47a1;
+            border: 2px solid #0d47a1;
+            padding: 12px 28px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .clear-btn:hover {
+            background: #0d47a1;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(13, 71, 161, 0.3);
+        }
+        
+        .toggle-switch {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 36px;
+            height: 14px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: -2px;
+            bottom: -3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        input:checked + .slider {
+            background-color: #0d47a1;
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(20px);
+        }
+        
+        .toggle-label {
+            font-size: 14px;
+            color: #5f6368;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #70757a;
+            margin-top: 12px;
+        }
+        
+        @media (max-width: 480px) {
+            .footer {
+                font-size: 11px;
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner-wrapper">
+            <img src="header.png" alt="Chhatrapati Sambhajinagar - A People-Driven Smart City" class="banner" onerror="this.style.display='none'">
+        </div>
+        <!-- Header Description -->
+        <div class="header">
+            <h1>Feedback on the Digital Coffee Table Book of Chhatrapati Sambhajinagar</h1>
+            <p>Thank you for going through the Coffee Table Book (CTB) on digital initiatives at Chhatrapati Sambhajinagar by Aurangababad Smart City Development Corporation Limited (ASCDCL).</p>
+            <p id="formDescription">We would appreciate your feedback on the CTB as well as the projects therein. Please fill this quick survey and let us know your thoughts!</p>
+            <p class="required-note" id="requiredNote">Indicates required question</p>
+        </div>
+        <!-- Question 1 -->
+        <form id="feedbackForm">
+            <div class="question-card">
+                <div class="question-title">Email <span class="required">*</span></div>
+                <input type="email" id="userEmail" name="email" placeholder="Your email address" required>
+            </div>
+        <!-- Question 2 -->
+            <div class="question-card">
+                <div class="question-title">How informative did you find the CTB? <span class="required">*</span></div>
+                <div class="scale-group">
+                    <div class="scale-options" data-start-label="Not very" data-end-label="Very much">
+                        <div class="scale-option">
+                            <label>1</label>
+                            <input type="radio" name="informative" value="1" required>
+                        </div>
+                        <div class="scale-option">
+                            <label>2</label>
+                            <input type="radio" name="informative" value="2">
+                        </div>
+                        <div class="scale-option">
+                            <label>3</label>
+                            <input type="radio" name="informative" value="3">
+                        </div>
+                        <div class="scale-option">
+                            <label>4</label>
+                            <input type="radio" name="informative" value="4">
+                        </div>
+                        <div class="scale-option">
+                            <label>5</label>
+                            <input type="radio" name="informative" value="5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="question-card">
+                <div class="question-title">Did you think the CTB covered the impact of the digital projects on Chhatrapati Sambhajinagar? <span class="required">*</span></div>
+                <div class="scale-group">
+                    <div class="scale-options" data-start-label="Not very" data-end-label="Very much">
+                        <div class="scale-option">
+                            <label>1</label>
+                            <input type="radio" name="impact" value="1" required>
+                        </div>
+                        <div class="scale-option">
+                            <label>2</label>
+                            <input type="radio" name="impact" value="2">
+                        </div>
+                        <div class="scale-option">
+                            <label>3</label>
+                            <input type="radio" name="impact" value="3">
+                        </div>
+                        <div class="scale-option">
+                            <label>4</label>
+                            <input type="radio" name="impact" value="4">
+                        </div>
+                        <div class="scale-option">
+                            <label>5</label>
+                            <input type="radio" name="impact" value="5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="question-card">
+                <div class="question-title">Which of the IT projects covered in the CTB did you find interesting and would like more information on?</div>
+                <div class="checkbox-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="governance" name="projects" value="Governance Projects">
+                        <label for="governance">Governance Projects</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="citizen" name="projects" value="Citizen Centric Projects">
+                        <label for="citizen">Citizen Centric Projects</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="mobility" name="projects" value="Mobility Projects">
+                        <label for="mobility">Mobility Projects</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="education" name="projects" value="Education Projects">
+                        <label for="education">Education Projects</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="security" name="projects" value="Security Projects">
+                        <label for="security">Security Projects</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="selectAllProjects">
+                        <label for="selectAllProjects">Select All</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 5 -->
+            <div class="question-card">
+                <div class="question-title">Which of the Mobile apps included in the CTB did you find interesting and would like more information on?</div>
+                <div class="checkbox-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="whatsapp" name="apps" value="Smart Chhatrapati Sambhajinagar WhatsApp Chatbot">
+                        <label for="whatsapp">Smart Chhatrapati Sambhajinagar WhatsApp Chatbot</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="nagrik" name="apps" value="Smart Nagrik">
+                        <label for="nagrik">Smart Nagrik</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="majha" name="apps" value="Majha Swachhatasathi">
+                        <label for="majha">Majha Swachhatasathi</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="itmo" name="apps" value="Chalo">
+                        <label for="itmo">Chalo</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="saksham" name="apps" value="Saksham">
+                        <label for="saksham">Saksham</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="jalbell" name="apps" value="Jal Bell">
+                        <label for="jalbell">Jal Bell</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="cleanstreets" name="apps" value="Clean Streets">
+                        <label for="cleanstreets">Clean Streets</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="parking" name="apps" value="CSN - SMART Park">
+                        <label for="parking">CSN - SMART Park</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="selectAllApps">
+                        <label for="selectAllApps">Select All</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 6 -->
+            <div class="question-card">
+                <div class="question-title">How is the overall design and layout of the CTB? <span class="required">*</span></div>
+                <div class="scale-group">
+                    <div class="scale-options" data-start-label="Not good" data-end-label="Excellent">
+                        <div class="scale-option">
+                            <label>1</label>
+                            <input type="radio" name="design" value="1" required>
+                        </div>
+                        <div class="scale-option">
+                            <label>2</label>
+                            <input type="radio" name="design" value="2">
+                        </div>
+                        <div class="scale-option">
+                            <label>3</label>
+                            <input type="radio" name="design" value="3">
+                        </div>
+                        <div class="scale-option">
+                            <label>4</label>
+                            <input type="radio" name="design" value="4">
+                        </div>
+                        <div class="scale-option">
+                            <label>5</label>
+                            <input type="radio" name="design" value="5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 7 -->
+            <div class="question-card">
+                <div class="question-title">Please provide any other feedback that you may like to share about the CTB or any of the projects at Chhatrapati Sambhajinagar!</div>
+                <textarea name="feedback" placeholder="Your answer"></textarea>
+            </div>
+
+            <div class="question-card">
+                <div class="question-title">Your Name</div>
+                <input type="text" name="name" placeholder="Your answer">
+            </div>
+            <!-- Question 8 -->
+            <div class="question-card">
+                <div class="toggle-switch">
+                    <label class="switch">
+                        <input type="checkbox" id="sendCopy" name="sendCopy">
+                        <span class="slider"></span>
+                    </label>
+                    <label for="sendCopy" class="toggle-label">Send me a copy of my responses.</label>
+                </div>
+            </div>
+            <!-- Submit button -->
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="button" class="clear-btn" onclick="clearForm()">Clear form</button>
+            </div>
+        </form>
+        
+        <div id="successMessage" style="display: none;">
+            <div class="header" style="text-align: center; padding: 50px 30px;">
+                <!-- <h1 style="font-size: 28px; margin-bottom: 20px; font-weight: 600;">Feedback on the Digital Coffee Table Book of Chhatrapati Sambhajinagar</h1>
+                <p style="font-size: 16px; color: #0d47a1; margin-bottom: 30px; font-weight: 500;">Thank you for your interest!</p> -->
+                <div style="background: #e8f5e9; border-left: 4px solid #4caf50; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                    <p style="font-size: 25px; color: #2e7d32; margin: 0;">✓ Your response has been recorded.</p>
+                    <p style="font-size: 10px; color: #898989; margin:0;">This form was created by MIPL</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <script>
+        fetch("https://script.google.com/macros/s/AKfycbwrtaY6Jz3PdXnkmkT3Bu3nVx7nuck9MnxDq01I97EHKb21rieZhIjfQqVTvJ9za3rQiA/exec")
+        .then(res => res.json())
+        .then(data => console.log(data));
+        
+        document.getElementById('userEmail').addEventListener('input', function() {
+            const email = this.value;
+            const label = document.getElementById('emailLabel');
+            const emailDisplay = document.getElementById('loggedInEmail');
+            
+            if (email) {
+                label.textContent = `Record ${email} as the email to be included with my response`;
+                emailDisplay.textContent = email;
+            } else {
+                label.textContent = 'Record your email as the email to be included with my response';
+                emailDisplay.textContent = 'Not signed in';
+            }
+        });
+
+        // Select All for IT Projects (Question 4)
+        document.getElementById('selectAllProjects').addEventListener('change', function() {
+            const projectCheckboxes = document.querySelectorAll('input[name="projects"]');
+            projectCheckboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
+
+        // Select All for Mobile Apps (Question 5)
+        document.getElementById('selectAllApps').addEventListener('change', function() {
+            const appCheckboxes = document.querySelectorAll('input[name="apps"]');
+            appCheckboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
+
+        // Update Select All state when individual checkboxes change
+        document.querySelectorAll('input[name="projects"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const allChecked = Array.from(document.querySelectorAll('input[name="projects"]')).every(cb => cb.checked);
+                document.getElementById('selectAllProjects').checked = allChecked;
+            });
+        });
+
+        document.querySelectorAll('input[name="apps"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const allChecked = Array.from(document.querySelectorAll('input[name="apps"]')).every(cb => cb.checked);
+                document.getElementById('selectAllApps').checked = allChecked;
+            });
+        });
+
+        function clearForm() {
+            if (confirm('Are you sure you want to clear the form?')) {
+                document.getElementById('feedbackForm').reset();
+                document.getElementById('loggedInEmail').textContent = 'Not signed in';
+                document.getElementById('emailLabel').textContent = 'Record your email as the email to be included with my response';
+            }
+        }
+
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+     
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(this);
+            const data = {
+                email: formData.get('email'),
+                recordEmail: formData.get('recordEmail') === 'on',
+                informative: formData.get('informative'),
+                impact: formData.get('impact'),
+                projects: formData.getAll('projects'),
+                apps: formData.getAll('apps'),
+                design: formData.get('design'),
+                feedback: formData.get('feedback'),
+                name: formData.get('name'),
+                sendCopy: formData.get('sendCopy') === 'on'
+            };
+            
+            console.log('Form Data:', data);
+            console.log('Send Copy Checkbox Value:', formData.get('sendCopy'));
+            console.log('Send Copy Boolean:', data.sendCopy);
+            console.log('Email:', data.email);
+          
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwrtaY6Jz3PdXnkmkT3Bu3nVx7nuck9MnxDq01I97EHKb21rieZhIjfQqVTvJ9za3rQiA/exec';
+            
+            console.log('Submitting to:', scriptURL);
+            console.log('Data being sent:', JSON.stringify(data));
+            
+            fetch(scriptURL, {
+                redirect: 'follow',
+                method: 'POST',
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                console.log('Response received:', response);
+                return response.text();
+            })
+            .then(result => {
+                console.log('Result:', result);
+                
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                
+                // Hide form and unnecessary text
+                document.getElementById('feedbackForm').style.display = 'none';
+                document.getElementById('formDescription').style.display = 'none';
+                document.getElementById('requiredNote').style.display = 'none';
+                
+                // Show success message
+                document.getElementById('successMessage').style.display = 'block';
+                
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            })
+            .catch(error => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                
+                console.error('Error:', error);
+                alert('There was an error submitting your response. Please try again.');
+            });
+        });
+    </script>
+</body>
+</html>
